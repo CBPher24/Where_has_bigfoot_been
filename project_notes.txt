@@ -1,0 +1,9 @@
+index.html to pull the app.py to add data
+
+come up with the storyline we will be going through
+
+create a scraping method to be used
+
+come up with presentation outline and slidedeck
+
+need multiple visualizations
