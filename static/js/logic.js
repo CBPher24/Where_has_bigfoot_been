@@ -1,5 +1,5 @@
 //GeoJSON URL Variables
-var bigfooturl = "D:\GT-VIRT-DATA-PT-03-2022-U-LOL\Bigfoot\data\Bigfoot_Locations.geojson"
+var bigfooturl = "Data\Bigfoot_Locations.geojson"
 
 // Initialize & Create  LayerGroup:
 var bigfoot = new L.LayerGroup();

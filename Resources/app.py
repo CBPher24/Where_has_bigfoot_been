@@ -1,6 +1,6 @@
 from flask import Flask, render_template, redirect
 from flask_pymongo import PyMongo
-import scrape_mars
+import bigfoot
 
 # Create an instance of Flask
 app = Flask(__name__)
@@ -14,7 +14,7 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/Project_3")
 def home():
 
     # Find one record of data from the mongo database
-    bigfoot_data = mongo.db.scraped.find_one()
+    bigfoot_data = mongo.db.Project_3.find_one()
 
     # Return template and data
     return render_template("index.html", bigfoot_data=bigfoot_data)
@@ -25,7 +25,7 @@ def home():
 def clean():
 
     # Run the scrape function
-    bigfoot_data = clean_bigfoot.clean()
+    bigfoot_data = bigfoot_data.update()
 
     # Update the Mongo database using update and upsert=True
     mongo.db.Bigfoot.update({}, {"$set": bigfoot_data}, upsert=True)
