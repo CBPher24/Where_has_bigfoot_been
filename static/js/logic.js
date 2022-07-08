@@ -1,5 +1,6 @@
 //GeoJSON URL Variables
-var bigfooturl = "Data\Bigfoot_Locations.geojson"
+var bigfooturl = bfoot_data
+
 
 // Initialize & Create  LayerGroup:
 var bigfoot = new L.LayerGroup();
@@ -20,7 +21,7 @@ var baseMaps = {
 
 // Create Overlay Object to Hold Overlay Layer
 var overlayMaps = {
-    "bigfoot": bigfoot,
+    bigfoot : L.marker(),
 
 };
 
@@ -35,17 +36,40 @@ var myMap = L.map("map", {
 L.control.layers(baseMaps, overlayMaps).addTo(myMap);
 
 // Retrieve bigfootURL ( GeoJSON Data) with D3
-d3.json(bigfooturl, function(bigfootData) {
+// d3.json(bigfooturl, function(bigfootData) {
 
-    function styleInfo(feature) {
-        return {
-          opacity: 1,
-          fillOpacity: 1,
-          fillColor: chooseColor(feature.properties.mag),
-          color: "#000000",
-          radius: markerSize(feature.properties.mag),
-          stroke: true,
-          weight: 0.5
-        };
-    }});
+//     function styleInfo(feature) {
+//         return {
+//           opacity: 1,
+//           fillOpacity: 1,
+//           fillColor: chooseColor(feature.properties.mag),
+//           color: "#000000",
+//           radius: markerSize(feature.properties.mag),
+//           stroke: true,
+//           weight: 0.5
+//         };
+//     }});
     
+function createMarkers(bfoot_data) {
+
+
+  
+    // Initialize an array to hold bike markers.
+    var Markers = [];
+  
+    // Loop through the stations array.
+    for (var index = 0; index < bfoot_data.length; index++) {
+      var lat = bfoot_data[index].data.Lat;
+      var lon = bfoot_data[index].data.Lon;
+  
+      // For each station, create a marker, and bind a popup with the station's name.
+      var Marker = L.marker([lat, lon])
+        .bindPopup("<h3>" + bfoot_data[index].data.ObjectId + "<h3><h3>Description: " + bfoot_data[index].data.descritio + "</h3>");
+  
+      // Add the marker to the bikeMarkers array.
+      Markers.push(Markers);
+    }
+  
+    // Create a layer group that's made from the bike markers array, and pass it to the createMap function.
+    createMap(L.layerGroup(Markers));
+  }

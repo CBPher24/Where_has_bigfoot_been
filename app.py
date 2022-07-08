@@ -9,8 +9,8 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/Project_3")
 
 
 @app.route("/")
-def main():
-    bfoot = mongo.db.Bigfoot.find_one()
+def home():
+    bfoot = mongo.db.Bigfoot.find()
     return render_template("index.html", bfoot_data=bfoot)
 
 
