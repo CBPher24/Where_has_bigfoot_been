@@ -19,18 +19,18 @@
 </head>
 
 <body>
-  <P1>{{bfoot_data[3].data.Lat}}</P1>
+  
   <!-- The div to Inject Map -->
   <div id="map"></div>
  
   <!-- API Key -->
   <script type="text/javascript" src="static/js/config.js"></script>
   <!-- JS -->
-  <script type="text/javascript" src="static/js/logic.js"></script>
-  <script type="text/javascript">
-    bfoot_data= '{{ bfoot_data }}'
-  createMarkers(bfoot_data)
-  </script>
+  <script type="text/javascript"></script>
+  <script type="text/javascript" src="static/js/logic.js">
+ var output = createMarkers({{bfoot_data}})</script>
+ <P1>output</P1>
+ 
 
   
 </body>
