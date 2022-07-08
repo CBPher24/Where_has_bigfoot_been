@@ -35,17 +35,28 @@ var myMap = L.map("map", {
 L.control.layers(baseMaps, overlayMaps).addTo(myMap);
 
 // Retrieve bigfootURL ( GeoJSON Data) with D3
-d3.json(bigfooturl, function(bigfootData) {
+d3.json(bigfootURL, function(bigfootData) {
+        L.geoJson(bigfootData), {
+                color: "#DC143C",
+                weight: 1
+        }.addTo(myMap);
+}) ;
 
-    function styleInfo(feature) {
-        return {
-          opacity: 1,
-          fillOpacity: 1,
-          fillColor: chooseColor(feature.properties.mag),
-          color: "#000000",
-          radius: markerSize(feature.properties.mag),
-          stroke: true,
-          weight: 0.5
-        };
-    }});
-    
+// Set Up Legend
+var legend = L.control({ position: "bottomright" });
+legend.onAdd = function() {
+    var div = L.DomUtil.create("div", "info legend"), 
+        qtybigfoot = [500, 1000, 2000, 3000, 4000, 5000];
+
+    div.innerHTML += "<h3>bigfoot</h3>"
+
+    for (var i = 0; i < qtybigfoot.length; i++) {
+        div.innerHTML +=
+            '<i style="background: ' + chooseColor(qtybigfoot[i] + 1) + '"></i> ' +
+            qtybigfoot[i] + (qtybigfoot[i + 1] ? '&ndash;' + qtybigfoot[i + 1] + '<br>' : '+');
+    }
+    return div;
+};
+// Add Legend to the Map
+legend.addTo(myMap);
+;
