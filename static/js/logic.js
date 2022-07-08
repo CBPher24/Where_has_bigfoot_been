@@ -36,40 +36,29 @@ var myMap = L.map("map", {
 L.control.layers(baseMaps, overlayMaps).addTo(myMap);
 
 // Retrieve bigfootURL ( GeoJSON Data) with D3
-// d3.json(bigfooturl, function(bigfootData) {
 
-//     function styleInfo(feature) {
-//         return {
-//           opacity: 1,
-//           fillOpacity: 1,
-//           fillColor: chooseColor(feature.properties.mag),
-//           color: "#000000",
-//           radius: markerSize(feature.properties.mag),
-//           stroke: true,
-//           weight: 0.5
-//         };
-//     }});
-    
-function createMarkers(bfoot_data) {
+d3.json(bigfootURL, function(bigfootData) {
+        L.geoJson(bigfootData), {
+                color: "#DC143C",
+                weight: 1
+        }.addTo(myMap);
+}) ;
 
+// Set Up Legend
+var legend = L.control({ position: "bottomright" });
+legend.onAdd = function() {
+    var div = L.DomUtil.create("div", "info legend"), 
+        qtybigfoot = [500, 1000, 2000, 3000, 4000, 5000];
 
-  
-    // Initialize an array to hold bike markers.
-    var Markers = [];
-  
-    // Loop through the stations array.
-    for (var index = 0; index < bfoot_data.length; index++) {
-      var lat = bfoot_data[index].data.Lat;
-      var lon = bfoot_data[index].data.Lon;
-  
-      // For each station, create a marker, and bind a popup with the station's name.
-      var Markers = L.marker([lat, lon])
-        .bindPopup("<h3>" + bfoot_data[index].data.ObjectId + "<h3><h3>Description: " + bfoot_data[index].data.descritio + "</h3>");
-  
-      // Add the marker to the bikeMarkers array.
-      Markers.push(Markers);
+    div.innerHTML += "<h3>bigfoot</h3>"
+
+    for (var i = 0; i < qtybigfoot.length; i++) {
+        div.innerHTML +=
+            '<i style="background: ' + chooseColor(qtybigfoot[i] + 1) + '"></i> ' +
+            qtybigfoot[i] + (qtybigfoot[i + 1] ? '&ndash;' + qtybigfoot[i + 1] + '<br>' : '+');
     }
-  
-    // Create a layer group that's made from the bike markers array, and pass it to the createMap function.
-    createMap(L.layerGroup(Markers));
-  }
+    return div;
+};
+// Add Legend to the Map
+legend.addTo(myMap);
+;
