@@ -1,8 +1,9 @@
 //GeoJSON URL Variables
-var bigfooturl = "D:\GT-VIRT-DATA-PT-03-2022-U-LOL\Bigfoot\data\Bigfoot_Locations.geojson"
+function createmap(big_foot)
+
 
 // Initialize & Create  LayerGroup:
-var bigfoot = new L.LayerGroup();
+
 
 //Define Variable for Tile Layer:
 var satelliteMap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
@@ -20,7 +21,7 @@ var baseMaps = {
 
 // Create Overlay Object to Hold Overlay Layer
 var overlayMaps = {
-    "bigfoot": bigfoot,
+    "bigfoot" : big_foot
 
 };
 
@@ -35,6 +36,7 @@ var myMap = L.map("map", {
 L.control.layers(baseMaps, overlayMaps).addTo(myMap);
 
 // Retrieve bigfootURL ( GeoJSON Data) with D3
+
 d3.json(bigfootURL, function(bigfootData) {
         L.geoJson(bigfootData), {
                 color: "#DC143C",
