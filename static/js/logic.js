@@ -1,9 +1,9 @@
 //GeoJSON URL Variables
-var bigfooturl = bfoot_data
+function createmap(big_foot)
 
 
 // Initialize & Create  LayerGroup:
-var bigfoot = new L.LayerGroup();
+
 
 //Define Variable for Tile Layer:
 var satelliteMap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
@@ -21,7 +21,7 @@ var baseMaps = {
 
 // Create Overlay Object to Hold Overlay Layer
 var overlayMaps = {
-    bigfoot : L.marker(),
+    "bigfoot" : big_foot
 
 };
 
@@ -63,7 +63,7 @@ function createMarkers(bfoot_data) {
       var lon = bfoot_data[index].data.Lon;
   
       // For each station, create a marker, and bind a popup with the station's name.
-      var Marker = L.marker([lat, lon])
+      var Markers = L.marker([lat, lon])
         .bindPopup("<h3>" + bfoot_data[index].data.ObjectId + "<h3><h3>Description: " + bfoot_data[index].data.descritio + "</h3>");
   
       // Add the marker to the bikeMarkers array.

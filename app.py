@@ -12,6 +12,7 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/Project_3")
 def home():
     bfoot = mongo.db.Bigfoot.find()
     return render_template("index.html", bfoot_data=bfoot)
+    
 
 
 # @app.route("/scrape")
