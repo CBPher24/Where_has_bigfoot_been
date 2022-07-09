@@ -11,10 +11,9 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/Project_3")
 
 @app.route("/")
 def home():
-    data = []
+    data = {}
     bfoot = mongo.db.Bigfoot.find()
-    for x in bfoot:
-        data.append(x)
+    data=list(bfoot)
     data = json_util.dumps(data)
 
 
