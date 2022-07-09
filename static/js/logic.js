@@ -69,13 +69,15 @@ function createMarkers(bfoot_data) {
     });
 // }
 var markers = L.markerClusterGroup();
+var years = []
 
 for (var i = 0; i < bfoot_data.length; i++) {
     var lat = bfoot_data[i].data.Lat;
     var lon = bfoot_data[i].data.Lon;
+    years.push(bfoot_data[i].data.year)
   var location = [lon, lat];
   if(location) {
-    markers.addLayer(L.marker([location[1],location[0]], {icon: bfIcon})
+    markers.addLayer(L.marker([location[1],location[0]], {icon: bfIcon}, {tags:bfoot_data[i].data.year})
     .bindPopup("<h3>" + bfoot_data[i].data.ObjectId + "<h3><h3>Description: " + bfoot_data[i].data.descriptio + "</h3>"));
   }
 }
