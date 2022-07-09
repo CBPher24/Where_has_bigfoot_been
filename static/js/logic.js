@@ -38,32 +38,35 @@ function createMarkers(bfoot_data) {
     var bfoot_data = JSON.parse(bfoot_data)
     console.log(bfoot_data[0])
 // }
+var markers = L.markerClusterGroup();
 
-// Set Up Legend
-var legend = L.control({ position: "bottomright" });
-legend.onAdd = function() {
-    var div = L.DomUtil.create("div", "info legend"), 
-        qtybigfoot = [500, 1000, 2000, 3000, 4000, 5000];
-
-  
-    // Initialize an array to hold markers.
-    var Markers = [];
-  
-    // Loop through the big foot array.
-    for (var index = 0; index < bfoot_data.length; index++) {
-      var lat = bfoot_data[index].data.Lat;
-      var lon = bfoot_data[index].data.Lon;
-  
-      // For each pass, create a marker, and bind a popup with the sighting's ID and description.
-      var Marker = L.marker([lat, lon])
-        .bindPopup("<h3>" + bfoot_data[index].data.ObjectId + "<h3><h3>Description: " + bfoot_data[index].data.descriptio + "</h3>");
-  
-      // Add the marker to the Markers array.
-      Markers.push(Marker);
-    }
-  
-    // Create a layer group that's made from the bike markers array, and pass it to the createMap function.
-    console.log(Markers)
-    createMap(L.featureGroup(Markers));
+for (var i = 0; i < bfoot_data.length; i++) {
+    var lat = bfoot_data[i].data.Lat;
+    var lon = bfoot_data[i].data.Lon;
+  var location = [lon, lat];
+  if(location) {
+    markers.addLayer(L.marker([location[1],location[0]])
+    .bindPopup("<h3>" + bfoot_data[i].data.ObjectId + "<h3><h3>Description: " + bfoot_data[i].data.descriptio + "</h3>"));
   }
 }
+
+    // var Markers = [];
+  
+    // // Loop through the big foot array.
+    // for (var index = 0; index < bfoot_data.length; index++) {
+    //   var lat = bfoot_data[index].data.Lat;
+    //   var lon = bfoot_data[index].data.Lon;
+  
+    //   // For each pass, create a marker, and bind a popup with the sighting's ID and description.
+    //   var Marker = L.marker([lat, lon])
+    //     .bindPopup("<h3>" + bfoot_data[index].data.ObjectId + "<h3><h3>Description: " + bfoot_data[index].data.descriptio + "</h3>");
+  
+    //   // Add the marker to the Markers array.
+    //   Markers.push(Marker);
+    // }
+  
+    // Create a layer group that's made from the bike markers array, and pass it to the createMap function.
+    console.log(markers)
+    createMap(markers);
+  }
+
