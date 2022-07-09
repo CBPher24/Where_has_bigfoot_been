@@ -39,6 +39,11 @@ function createMarkers(bfoot_data) {
     console.log(bfoot_data[0])
 // }
 
+// Set Up Legend
+var legend = L.control({ position: "bottomright" });
+legend.onAdd = function() {
+    var div = L.DomUtil.create("div", "info legend"), 
+        qtybigfoot = [500, 1000, 2000, 3000, 4000, 5000];
 
   
     // Initialize an array to hold markers.
@@ -61,34 +66,4 @@ function createMarkers(bfoot_data) {
     console.log(Markers)
     createMap(L.featureGroup(Markers));
   }
-// function createmap(big_foot){
-//     //Define Variable for Tile Layer:
-//     var satelliteMap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
-//         attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
-//         maxZoom: 18,
-//         id: "mapbox.satellite",
-//         accessToken: API_KEY
-//     });
-// // Define baseMaps Object to Hold Base Layers:
-
-//     var baseMaps = {
-//     "Satellite": satelliteMap,
-   
-//     };
-
-// // Create Overlay Object to Hold Overlay Layer
-//     var overlayMaps = {
-//     "bigfoot" : big_foot
-
-//     };
-
-// // Create Map, Passing In satelliteMap & bigfoot as Default Layers to Display on Load
-//     var myMap = L.map("map", {
-//         center: [30, -90],
-//         zoom: 1.2,
-//         layers: [satelliteMap, bigfoot]
-//     });
-
-// // Create a Layer Control + Pass in baseMaps and overlayMaps + Add the Layer Control to the Map
-//     L.control.layers(baseMaps, overlayMaps).addTo(myMap);
-// }
+}
