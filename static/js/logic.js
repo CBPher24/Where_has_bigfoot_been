@@ -44,15 +44,14 @@ function createMap(big_foot){
 
 // Create Map, Passing In satelliteMap & bigfoot as Default Layers to Display on Load
     var myMap = L.map("map", {
-        center: [30, -90],
-        zoom: 1.2,
+        center: [50, -99],
+        zoom: 2.0,
         layers: [satelliteMap, big_foot]
     });
 
 // Create a Layer Control + Pass in baseMaps and overlayMaps + Add the Layer Control to the Map
     L.control.layers(baseMaps, overlayMaps).addTo(myMap);
 }
-
 
 
 

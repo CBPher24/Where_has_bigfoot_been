@@ -8,7 +8,6 @@ app = Flask(__name__)
 
 mongo = PyMongo(app, uri="mongodb://localhost:27017/Project_3")
 
-
 @app.route("/")
 def home():
     data = {}

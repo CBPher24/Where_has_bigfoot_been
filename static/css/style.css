@@ -3,11 +3,11 @@ body {
     margin: 0;
   }
   
-  #map,
+  /* #map,
   body,
   html {
     height: 100%;
-  }
+  } */
   .leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
     -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
     -moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
@@ -83,3 +83,20 @@ body {
   .marker-cluster span {
     line-height: 30px;
     }
+  
+    #map-container{
+
+      padding-top:120px;
+      padding-left:10px;
+
+  }
+
+  #map {
+  position: relative;
+  margin:0;
+  padding:0; 
+  border: 1px solid black;
+  border-radius: 8px;
+  height: 400px;
+  width: 100%
+  }
