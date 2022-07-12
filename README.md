@@ -1,6 +1,9 @@
 
 ## PROJECT 3: WHERE HAS BIGFOOT BEEN?
 
+![header](https://user-images.githubusercontent.com/100891182/178513371-40a9fd95-5391-4c85-bbf5-f96d82459c41.jpg)
+
+
 TEAM MEMBERS:
 
 ## WHERE HAS BIGFOOT BEEN?
@@ -22,6 +25,9 @@ Libraries & data visualization utilized: Pandas, Flask, PyMongo, MongoDB, Json, 
 ## FINAL FINDINGS:
 
 States which are high density of sasquatches such as: PA, OH, MO, NJ, CA, TN, TX, KY
+
+![EeB_eXVWkAAUOx_](https://user-images.githubusercontent.com/100891182/178513462-7791d762-09bb-4efc-8573-b06879f73cba.jpg)
+
 
 ## PRESENTATION LINK:
 
