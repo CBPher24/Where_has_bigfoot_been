@@ -15,7 +15,7 @@ This project will create an application that shows various critical and importan
 
 ## METHODS FOR ANALYSIS:
 
-Utilized the datasets found in BFRO, dataworld, Kaggle.
+Utilized the datasets found in BFRO, DataWorld, Kaggle.
 
 Libraries & data visualization utilized: Pandas, Flask, PyMongo, MongoDB, Json, D3, Leaflet, OpenStreetMap, Mapbox
 
