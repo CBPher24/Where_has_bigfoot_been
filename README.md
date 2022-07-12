@@ -26,7 +26,20 @@ Libraries & data visualization utilized: Pandas, Flask, PyMongo, MongoDB, Json, 
 
 States which are high density of sasquatches such as: PA, OH, MO, NJ, CA, TN, TX, KY
 
-![EeB_eXVWkAAUOx_](https://user-images.githubusercontent.com/100891182/178513462-7791d762-09bb-4efc-8573-b06879f73cba.jpg)
+![Web capture_11-7-2022_11157_127 0 0 1](https://user-images.githubusercontent.com/100891182/178527948-8151ed60-6324-44f1-8f69-a71c2127080c.jpeg)
+
+
+![Web capture_11-7-2022_111554_127 0 0 1](https://user-images.githubusercontent.com/100891182/178527975-e4617899-dc26-4929-be75-e94fd3826d5c.jpeg)
+
+
+![Web capture_11-7-2022_111620_127 0 0 1](https://user-images.githubusercontent.com/100891182/178527995-f4ddf0a3-af76-4835-b5e7-1337668fb237.jpeg)
+
+
+![Web capture_12-7-2022_101817_127 0 0 1](https://user-images.githubusercontent.com/100891182/178528139-6a7ed37c-e6fb-4eec-bc16-79cf0f832963.jpeg)
+
+
+
+
 
 
 ## PRESENTATION LINK:
