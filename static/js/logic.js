@@ -77,8 +77,9 @@ for (var i = 0; i < bfoot_data.length; i++) {
   var location = [lon, lat];
   if(location) {
     markers.addLayer(L.marker([location[1],location[0]], {icon: bfIcon}, {tags:bfoot_data[i].data.year})
-    .bindPopup("<h3>ObjectId: " + bfoot_data[i].data.ObjectId +
-     "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio + "<hr></p>"));
+    .bindPopup("<h3>Object Id: " + bfoot_data[i].data.ObjectId +
+    "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio +
+    "</p><hr><p>Class: " + bfoot_data[i].data.class + + "</p>"));
   }
 }
 
