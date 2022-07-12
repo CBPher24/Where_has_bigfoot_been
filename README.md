@@ -1,4 +1,4 @@
-# Where_has_bigfoot_been
+
 ## PROJECT 3: WHERE HAS BIGFOOT BEEN?
 
 TEAM MEMBERS:
