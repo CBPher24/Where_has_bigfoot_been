@@ -24,7 +24,7 @@ The project runs using a Python "Flak" App, including JavaScript, HTML, and CSS
 
 Powered by a dataset with over 3,500 records, using a Mongo Database.
 
-Our chosen track: A Combination of Webscraping and Leaflet
+Our chosen track: combination of Webscraping and Leaflet
 
 A new JS library: 
 
