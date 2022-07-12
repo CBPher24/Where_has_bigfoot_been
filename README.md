@@ -33,7 +33,8 @@ A new JS library:
 States which are high density of sasquatches such as: PA, OH, MO, NJ, CA, TN, TX, KY
 
 
-![Web capture_12-7-2022_101817_127 0 0 1](https://user-images.githubusercontent.com/100891182/178569614-be94fb6f-26fd-4ea4-8de7-af45c6c72fd0.jpeg)
+![Web capture_12-7-2022_133329_127 0 0 1](https://user-images.githubusercontent.com/100891182/178569883-be468ae8-8ec5-46b9-808d-8510712ff1ef.jpeg)
+
 
 
 ![Web capture_11-7-2022_111554_127 0 0 1](https://user-images.githubusercontent.com/100891182/178527975-e4617899-dc26-4929-be75-e94fd3826d5c.jpeg)
