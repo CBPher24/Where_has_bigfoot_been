@@ -58,3 +58,10 @@ https://data.world/timothyrenner/bfro-sightings-data/workspace/project-summary?a
 
 http://bfro.net/REF/aboutbfr.asp
 
+https://cdn.pixabay.com/photo/2022/01/14/04/02
+
+https://cdn.pixabay.com/photo/2022/01/14/04/02/bigfoot-6936421__340.png
+
+
+
+
