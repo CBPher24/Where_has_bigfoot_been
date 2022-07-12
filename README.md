@@ -20,7 +20,15 @@ This project will create an application that shows various critical and importan
 
 Utilized the datasets found in BFRO, DataWorld, Kaggle.
 
-Libraries & data visualization utilized: Pandas, Flask, PyMongo, MongoDB, Json, D3, Leaflet, OpenStreetMap, Mapbox
+The project runs using a Python "Flak" App, including JavaScript, HTML, and CSS
+
+Powered by a dataset with over 3,500 records
+
+Using a Mongo Database
+
+Our chosen track: A Combination of Webscraping and Leaflet
+
+A new JS library: 
 
 ## FINAL FINDINGS:
 
