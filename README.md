@@ -21,17 +21,27 @@ This project will create an application that shows various critical and importan
 
 Utilized the datasets found in BFRO, DataWorld.
 
-The project runs using a Python "Flak" App, including JavaScript, HTML, and CSS
-
 Powered by a dataset with over 3,500 records, using a Mongo Database.
 
-Our chosen track: combination of Webscraping and Leaflet
+The project runs using a Python "Flak" App, including JavaScript, HTML, and CSS
+
+Combination of Webscraping and Leaflet
 
 A new JS library: 
 
 ## FINAL FINDINGS:
 
 States which are high density of sasquatches such as: PA, OH, MO, NJ, CA, TN, TX, KY
+
+Distribution of bigfoot sightings by time (?)
+
+Distribution of bigfoot sightings by location:
+
+Number of bigfoot sightings by class:
+
+    Class A
+    Class B:
+    Class C: 
 
 
 ![Web capture_12-7-2022_133329_127 0 0 1](https://user-images.githubusercontent.com/100891182/178569883-be468ae8-8ec5-46b9-808d-8510712ff1ef.jpeg)
