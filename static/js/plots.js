@@ -113,7 +113,7 @@ function classBarChart(BFData) {
           
           
           Plotly.newPlot('lineplot', data);
-        console.log(counts);
+        
     }
             
         // var BFData = JSON.parse(BFData)

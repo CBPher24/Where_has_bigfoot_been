@@ -116,7 +116,7 @@ for (var i = 0; i < bfoot_data.length; i++) {
 }
 
     
-    console.log(markers)
+    
     createMap(markers);
   };
 
