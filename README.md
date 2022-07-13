@@ -60,6 +60,7 @@ Number of bigfoot sightings by class:
 ![Web capture_13-7-2022_112113_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819870-473ca991-9439-4965-91f2-c55b38e468de.jpeg)
 
 
+![Web capture_13-7-2022_16417_127 0 0 11](https://user-images.githubusercontent.com/100891182/178838028-52a65b95-7580-4154-8c0c-f77856fa9fde.jpeg)
 
 
 
