@@ -3,11 +3,7 @@ body {
     margin: 0;
   }
   
-  /* #map,
-  body,
-  html {
-    height: 100%;
-  } */
+  
   .leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
     -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
     -moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
@@ -122,4 +118,9 @@ body {
     float: left;
     margin-right: 8px;
     opacity: 0.7;
+  }
+  .jumbotron {
+    text-align: center;
+    background-image: url('https://t4.ftcdn.net/jpg/01/25/97/83/240_F_125978375_bGrZ5aSPsmt9cCCGG4q6pvYoEHlqfBa6.jpg');
+    background-size: cover;
   }
