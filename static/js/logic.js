@@ -51,55 +51,74 @@ function createMap(big_foot){
 
 // Create a Layer Control + Pass in baseMaps and overlayMaps + Add the Layer Control to the Map
     L.control.layers(baseMaps, overlayMaps).addTo(myMap);
-}
+    var legend = L.control({position: 'bottomright'});
 
+        legend.onAdd = function (map) {
+
+        var div = L.DomUtil.create('div', 'info legend');
+        div.innerHTML += "<h6>Incident Class</h6>"
+        div.innerHTML += '<i style="background:' + "#53C115" + '"></i> ' + (  "Class A" + '<br>' )
+        div.innerHTML += '<i style="background:' + "#0422D3" + '"></i> ' + ( "Class B" + '<br>' )
+        div.innerHTML += '<i style="background:' + "#992301" + '"></i> ' + ( "Class C" + '<br>' )
+
+
+    return div;
+    }
+
+    legend.addTo(myMap);
+}
 
 
 function createMarkers(bfoot_data) {
     var bfoot_data = JSON.parse(bfoot_data)
-    console.log(bfoot_data[0])
-    var bfIcon = L.icon({
+    // console.log(bfoot_data[0])
+    var bfIconGreen = L.colorIcon({
+        iconSize:     [20, 43],
+        popupAnchor:  [-3, -76],
         iconUrl: 'https://cdn.pixabay.com/photo/2022/01/14/04/02/bigfoot-6936421__340.png',
-        
-    
-        iconSize:     [20, 43], // size of the icon
-        iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-        popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+        color: "#53C115"
+
+    });
+    var bfIconBlue = L.colorIcon({
+        iconSize:     [20, 43],
+        popupAnchor:  [-3, -76],
+        iconUrl: 'https://cdn.pixabay.com/photo/2022/01/14/04/02/bigfoot-6936421__340.png',
+        color: "#0422D3"
+
+    });
+    var bfIconRed = L.colorIcon({
+        iconSize:     [20, 43],
+        popupAnchor:  [-3, -76],
+        iconUrl: 'https://cdn.pixabay.com/photo/2022/01/14/04/02/bigfoot-6936421__340.png',
+        color: "#992301"
+
     });
 // }
 var markers = L.markerClusterGroup();
-var years = []
+var classes = []
 
 for (var i = 0; i < bfoot_data.length; i++) {
     var lat = bfoot_data[i].data.Lat;
     var lon = bfoot_data[i].data.Lon;
-    years.push(bfoot_data[i].data.year)
   var location = [lon, lat];
   if(location) {
-    markers.addLayer(L.marker([location[1],location[0]], {icon: bfIcon}, {tags:bfoot_data[i].data.year})
-    .bindPopup("<h3>Object Id: " + bfoot_data[i].data.ObjectId +
-    "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio +
-    "</p><hr><p>Class: " + bfoot_data[i].data.class + + "</p>"));
+    if (bfoot_data[i].data.class == "Class A") {
+        markers.addLayer(L.marker([location[1],location[0]], {icon: bfIconGreen}, )
+        .bindPopup("<h3>Incident #: " + bfoot_data[i].data.ObjectId +
+        "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio + "<hr></p>"+"<hr><p>Year: " + bfoot_data[i].data.Year + "<hr></p>"));}
+    else if (bfoot_data[i].data.class == "Class B") {markers.addLayer(L.marker([location[1],location[0]], {icon: bfIconBlue}, )
+        .bindPopup("<h3>Incident #: " + bfoot_data[i].data.ObjectId +
+        "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio + "<hr></p>"+"<hr><p>Year: " + bfoot_data[i].data.Year + "<hr></p>"));}
+    else {markers.addLayer(L.marker([location[1],location[0]], {icon: bfIconRed}, )
+        .bindPopup("<h3>Incident #: " + bfoot_data[i].data.ObjectId +
+        "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio + "<hr></p>"+"<hr><p>Year: " + bfoot_data[i].data.Year + "<hr></p>"));}
   }
 }
 
-    // var Markers = [];
-  
-    // // Loop through the big foot array.
-    // for (var index = 0; index < bfoot_data.length; index++) {
-    //   var lat = bfoot_data[index].data.Lat;
-    //   var lon = bfoot_data[index].data.Lon;
-  
-    //   // For each pass, create a marker, and bind a popup with the sighting's ID and description.
-    //   var Marker = L.marker([lat, lon])
-    //     .bindPopup("<h3>" + bfoot_data[index].data.ObjectId + "<h3><h3>Description: " + bfoot_data[index].data.descriptio + "</h3>");
-  
-    //   // Add the marker to the Markers array.
-    //   Markers.push(Marker);
-    // }
-  
-    // Create a layer group that's made from the bike markers array, and pass it to the createMap function.
-    console.log(markers)
+    
+    
     createMap(markers);
-  }
+  };
+
+  
 
