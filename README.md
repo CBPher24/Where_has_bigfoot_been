@@ -31,7 +31,7 @@ Combination of Webscraping and Leaflet
 
 States which are high density of sasquatches such as
 
-Distribution of bigfoot sightings by time (?)
+Distribution of bigfoot sightings by year.
 
 Distribution of bigfoot sightings by location:
 
