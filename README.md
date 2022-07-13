@@ -21,11 +21,11 @@ This project will create an application that shows various critical and importan
 
 Utilized the datasets found in BFRO, DataWorld.
 
-The project runs using a Python "Flak" App, including JavaScript, HTML, and CSS
-
 Powered by a dataset with over 3,500 records, using a Mongo Database.
 
-Our chosen track: combination of Webscraping and Leaflet
+The project runs using a Python "Flak" App, including JavaScript, HTML, and CSS
+
+Combination of Webscraping and Leaflet
 
 A new JS library: 
 
