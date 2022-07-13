@@ -50,6 +50,7 @@
         </div>
     </div>
     <div id="plot"></div>
+    <div id="lineplot"></div>
     <!-- <script type="text/javascript" src="static/js/plots.js"></script>
     <script type="text/javascript">classBarChart({{plotdata|tojson}})</script> -->
 
@@ -64,7 +65,10 @@
             
          </script>
          <script type="text/javascript" src = "static/js/plots.js"></script>
-         <script type="text/javascript">classBarChart({{bfoot_data|tojson}})</script>
+         <script type="text/javascript">
+         classBarChart({{bfoot_data|tojson}})
+         classYearChart({{bfoot_data|tojson}})
+         </script>
 
  
  <!-- Bootstrap -->

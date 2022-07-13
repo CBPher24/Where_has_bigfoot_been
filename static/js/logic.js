@@ -105,13 +105,13 @@ for (var i = 0; i < bfoot_data.length; i++) {
     if (bfoot_data[i].data.class == "Class A") {
         markers.addLayer(L.marker([location[1],location[0]], {icon: bfIconGreen}, )
         .bindPopup("<h3>Incident #: " + bfoot_data[i].data.ObjectId +
-        "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio + "<hr></p>"));}
+        "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio + "<hr></p>"+"<hr><p>Year: " + bfoot_data[i].data.Year + "<hr></p>"));}
     else if (bfoot_data[i].data.class == "Class B") {markers.addLayer(L.marker([location[1],location[0]], {icon: bfIconBlue}, )
         .bindPopup("<h3>Incident #: " + bfoot_data[i].data.ObjectId +
-        "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio + "<hr></p>"));}
+        "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio + "<hr></p>"+"<hr><p>Year: " + bfoot_data[i].data.Year + "<hr></p>"));}
     else {markers.addLayer(L.marker([location[1],location[0]], {icon: bfIconRed}, )
         .bindPopup("<h3>Incident #: " + bfoot_data[i].data.ObjectId +
-        "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio + "<hr></p>"));}
+        "</h3><hr><p>Description: " + bfoot_data[i].data.descriptio + "<hr></p>"+"<hr><p>Year: " + bfoot_data[i].data.Year + "<hr></p>"));}
   }
 }
 
