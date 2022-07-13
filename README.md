@@ -29,35 +29,35 @@ Combination of Webscraping and Leaflet
 
 ## FINAL FINDINGS:
 
-# Distribution of bigfoot sightings by location
+### Distribution of bigfoot sightings by location
 
 
 ![Web capture_13-7-2022_112113_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819870-473ca991-9439-4965-91f2-c55b38e468de.jpeg)
 
 
-# Distribution of bigfoot sightings by location in Satellite basemap 
+### Distribution of bigfoot sightings by location in Satellite basemap 
 
 ![Web capture_13-7-2022_101757_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819659-629640ab-6dc0-44a7-81a9-63ec7ac35bd2.jpeg)
 
 
-# Distribution of bigfoot sightings by location in street basemap 
+### Distribution of bigfoot sightings by location in street basemap 
 
 ![Web capture_13-7-2022_101843_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819706-f2238e3a-2439-40b1-ac34-242a014c08bf.jpeg)
 
 
-# Distribution of bigfoot sightings by location in Topographical basemap 
+### Distribution of bigfoot sightings by location in Topographical basemap 
 
 ![Web capture_13-7-2022_103031_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819741-04d0d88d-f824-419f-9d7d-579047863c14.jpeg)
 
 
 
-# Popup with detail of sighting
+### Popup with detail of sighting
 
 ![Web capture_13-7-2022_103234_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819781-c52c8dc3-822b-4b8e-a5f1-f69a0da00c3e.jpeg)
 
 
 
-# Landing page with distribution of bigfoot sightings by location, year and by class, and the 10 most convincing bigfoot sightings.
+### Landing page with distribution of bigfoot sightings by location, year and by class, and the 10 most convincing bigfoot sightings.
 
 
 ![Web capture_13-7-2022_16417_127 0 0 11](https://user-images.githubusercontent.com/100891182/178838028-52a65b95-7580-4154-8c0c-f77856fa9fde.jpeg)
