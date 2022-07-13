@@ -16,7 +16,7 @@ def home():
     data = json_util.dumps(data)
 
 
-    return render_template("index.html", bfoot_data=data)
+    return render_template("index.html", bfoot_data=data, plotdata= data)
     
 
 

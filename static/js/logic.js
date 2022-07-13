@@ -71,7 +71,7 @@ function createMap(big_foot){
 
 function createMarkers(bfoot_data) {
     var bfoot_data = JSON.parse(bfoot_data)
-    console.log(bfoot_data[0])
+    // console.log(bfoot_data[0])
     var bfIconGreen = L.colorIcon({
         iconSize:     [20, 43],
         popupAnchor:  [-3, -76],
