@@ -26,7 +26,11 @@ function classBarChart(BFData) {
         let trace1 = {
           x: classes,
           y: counts,
-          type: "bar"
+          marker:{
+            color: ['rgb(9, 224, 34, 0.5)', 'rgb(15, 39, 219, 0.5)', 'rgb(255, 0, 0, 0.8)']
+          },
+          type: "bar",
+          
         }
       
         let data = [trace1]
