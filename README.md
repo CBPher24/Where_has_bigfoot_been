@@ -44,10 +44,6 @@ Number of bigfoot sightings by class:
     Class C: 
 
 
-![image](https://user-images.githubusercontent.com/100891182/178629419-b83ee807-d4bf-421c-b849-adb12fbc48fd.png)
-
-
-
 ![Web capture_12-7-2022_133329_127 0 0 1](https://user-images.githubusercontent.com/100891182/178569883-be468ae8-8ec5-46b9-808d-8510712ff1ef.jpeg)
 
 
