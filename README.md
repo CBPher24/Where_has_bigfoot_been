@@ -19,7 +19,7 @@ This project will create an application that shows various critical and importan
 
 ## METHODS FOR ANALYSIS:
 
-Utilized the datasets found in BFRO, DataWorld, Kaggle.
+Utilized the datasets found in BFRO, DataWorld.
 
 The project runs using a Python "Flak" App, including JavaScript, HTML, and CSS
 
