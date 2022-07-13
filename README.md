@@ -27,11 +27,9 @@ The project runs using a Python "Flak" App, including JavaScript, HTML, and CSS
 
 Combination of Webscraping and Leaflet
 
-A new JS library: 
-
 ## FINAL FINDINGS:
 
-States which are high density of sasquatches such as: PA, OH, MO, NJ, CA, TN, TX, KY
+States which are high density of sasquatches such as
 
 Distribution of bigfoot sightings by time (?)
 
