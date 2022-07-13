@@ -44,18 +44,13 @@ Distribution of bigfoot sightings by location
 
 
 
-Distribution of bigfoot sightings by year.
-
-
-Number of bigfoot sightings by class:
-
-    Class A
-    Class B
-    Class C 
+Popup with detail of sighting
 
 
 ![Web capture_13-7-2022_103234_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819781-c52c8dc3-822b-4b8e-a5f1-f69a0da00c3e.jpeg)
 
+
+Landing page with distribution of bigfoot sightings by location, by year and by class.
 
 
 ![Web capture_13-7-2022_16417_127 0 0 11](https://user-images.githubusercontent.com/100891182/178838028-52a65b95-7580-4154-8c0c-f77856fa9fde.jpeg)
