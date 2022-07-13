@@ -31,7 +31,7 @@ Combination of Webscraping and Leaflet
 
 States which are high density of sasquatches such as
 
-Distribution of bigfoot sightings by time (?)
+Distribution of bigfoot sightings by year.
 
 Distribution of bigfoot sightings by location:
 
@@ -42,19 +42,22 @@ Number of bigfoot sightings by class:
     Class C: 
 
 
-![Web capture_12-7-2022_133329_127 0 0 1](https://user-images.githubusercontent.com/100891182/178569883-be468ae8-8ec5-46b9-808d-8510712ff1ef.jpeg)
+![Web capture_13-7-2022_101757_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819659-629640ab-6dc0-44a7-81a9-63ec7ac35bd2.jpeg)
 
 
-![Web capture_11-7-2022_111554_127 0 0 1](https://user-images.githubusercontent.com/100891182/178527975-e4617899-dc26-4929-be75-e94fd3826d5c.jpeg)
+![Web capture_13-7-2022_101843_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819706-f2238e3a-2439-40b1-ac34-242a014c08bf.jpeg)
 
 
-![Web capture_11-7-2022_111620_127 0 0 1](https://user-images.githubusercontent.com/100891182/178527995-f4ddf0a3-af76-4835-b5e7-1337668fb237.jpeg)
+![Web capture_13-7-2022_103031_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819741-04d0d88d-f824-419f-9d7d-579047863c14.jpeg)
 
 
-![Web capture_12-7-2022_2070_127 0 0 1](https://user-images.githubusercontent.com/100891182/178629228-0de86e5a-5e8a-494c-97ab-62915ff2690d.jpeg)
+![Web capture_13-7-2022_103234_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819781-c52c8dc3-822b-4b8e-a5f1-f69a0da00c3e.jpeg)
 
 
-![Web capture_12-7-2022_101817_127 0 0 1](https://user-images.githubusercontent.com/100891182/178528139-6a7ed37c-e6fb-4eec-bc16-79cf0f832963.jpeg)
+![Web capture_13-7-2022_103753_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819827-abea6a54-91b7-4f3a-bb4c-e42954b5c474.jpeg)
+
+
+![Web capture_13-7-2022_112113_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819870-473ca991-9439-4965-91f2-c55b38e468de.jpeg)
 
 
 
