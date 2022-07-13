@@ -29,17 +29,9 @@ Combination of Webscraping and Leaflet
 
 ## FINAL FINDINGS:
 
-States which are high density of sasquatches such as
+Distribution of bigfoot sightings by location
 
-Distribution of bigfoot sightings by year.
-
-Distribution of bigfoot sightings by location:
-
-Number of bigfoot sightings by class:
-
-    Class A
-    Class B:
-    Class C: 
+![Web capture_13-7-2022_112113_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819870-473ca991-9439-4965-91f2-c55b38e468de.jpeg)
 
 
 ![Web capture_13-7-2022_101757_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819659-629640ab-6dc0-44a7-81a9-63ec7ac35bd2.jpeg)
@@ -51,10 +43,19 @@ Number of bigfoot sightings by class:
 ![Web capture_13-7-2022_103031_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819741-04d0d88d-f824-419f-9d7d-579047863c14.jpeg)
 
 
+
+Distribution of bigfoot sightings by year.
+
+
+Number of bigfoot sightings by class:
+
+    Class A
+    Class B
+    Class C 
+
+
 ![Web capture_13-7-2022_103234_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819781-c52c8dc3-822b-4b8e-a5f1-f69a0da00c3e.jpeg)
 
-
-![Web capture_13-7-2022_112113_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819870-473ca991-9439-4965-91f2-c55b38e468de.jpeg)
 
 
 ![Web capture_13-7-2022_16417_127 0 0 11](https://user-images.githubusercontent.com/100891182/178838028-52a65b95-7580-4154-8c0c-f77856fa9fde.jpeg)
