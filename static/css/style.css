@@ -123,4 +123,86 @@ body {
     text-align: center;
     background-image: url('https://t4.ftcdn.net/jpg/01/25/97/83/240_F_125978375_bGrZ5aSPsmt9cCCGG4q6pvYoEHlqfBa6.jpg');
     background-size: cover;
+
+
+  /* carousel section */
+  .carousel {
+    position: relative;
+    height: 600px;
+    width: 80%
+    margin: 0 auto;
+  }
+
+  .carousel_button{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+  }
+  
+  .carousel_button--left{
+    left: -40px;
+  }
+
+  .carousel_button--right{
+    right: -40px;
+  }
+
+  .carousel_button img{
+    width: 10px;
+  }
+
+  .car_img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .carousel_container{
+    background: gray;
+    padding: 10px;
+    height: 100%;
+  }
+
+  .carousel_track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .slide{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .mid_hover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .car_img {
+    opacity: 0.3;
+  }
+  
+  .container:hover .mid_hover {
+    opacity: 1;
+  }
+  
+  .hover_text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
   }

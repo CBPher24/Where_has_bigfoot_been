@@ -60,22 +60,26 @@
     <div id="lineplot"></div>
     <!-- <script type="text/javascript" src="static/js/plots.js"></script>
     <script type="text/javascript">classBarChart({{plotdata|tojson}})</script> -->
+
+
     <div class="carousel">
-      <button class = "carousel_button">
+      <button class = "carousel_button--left">
         <img src="../Pics/f080b8582a98c35d31dde313fc7d42ed--vinyl-decals-vinyls.jpg" alt="">
       </button>
       <div class="carousel_container">  
-        <ul class="carousel_tack">
+        <ul class="carousel_track">
           {% for pic in bfimgs%}
           <li class="slides">
             <!-- <img src="../Pics/bigfoot-main.webp" alt="Testing"> -->
-            <img src="{{pic.data.photo  | safe}}" alt="">
-            <p>{{pic.data.blurb  | safe}}</p>
+            <img class= "car_img" src="{{pic.data.photo  | safe}}" alt="">
+            <div class="mid_hover">
+              <div class="hover_text">{{pic.data.blurb  | safe}}</div>
+            </div>
           </li>
           {% endfor %}
         </ul>
       </div>
-      <button class = "carousel_button">
+      <button class = "carousel_button--right">
         <img src="../Pics/f080b8582a98c35d31dde313fc7d42ed--vinyl-decals-vinyls.jpg" alt="">
       </button>
     </div>
