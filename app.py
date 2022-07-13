@@ -12,11 +12,12 @@ mongo = PyMongo(app, uri="mongodb://localhost:27017/Project_3")
 def home():
     data = {}
     bfoot = mongo.db.Bigfoot.find()
+    bimgs = mongo.db.images.find()
     data=list(bfoot)
     data = json_util.dumps(data)
 
 
-    return render_template("index.html", bfoot_data=data, plotdata= data)
+    return render_template("index.html", bfoot_data=data, plotdata= data, bfimgs = bimgs)
     
 
 
