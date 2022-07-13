@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: #777;
   }
   
   
@@ -86,7 +87,41 @@ body {
       padding-left:10px;
 
   }
-
+  .plotContainer{
+    position: relative;
+    background-color: #faebd7;
+    margin-left: 20px;
+    padding:20px 0; 
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    }
+    #plot{
+      height: 80%;
+      width: 90%;
+      padding-left: 20px;
+    }
+    #lineplot{
+      height: 100%;
+      width: 100%;
+    }
+  
+  #Yeti {
+    position: relative;
+    background-color: antiquewhite;
+    margin-left: 20px;
+    outline-offset: 10px;
+    margin: 20px auto;
+    border-spacing: 10px;
+    padding:20px 0; 
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    }
   #map {
   position: relative;
   margin:0;
@@ -123,13 +158,14 @@ body {
     text-align: center;
     background-image: url('https://t4.ftcdn.net/jpg/01/25/97/83/240_F_125978375_bGrZ5aSPsmt9cCCGG4q6pvYoEHlqfBa6.jpg');
     background-size: cover;
+  }
 
 
   /* carousel section */
   .carousel {
     position: relative;
     height: 600px;
-    width: 80%
+    width: 80%;
     margin: 0 auto;
   }
 

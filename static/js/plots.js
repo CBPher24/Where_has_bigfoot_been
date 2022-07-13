@@ -22,10 +22,18 @@ function classBarChart(BFData) {
 
 
      function plotMetric(classes,counts){
+        var examples = ["Class A is a direct sighting", "Class B is when noises or events are seen","Class C is a report from a third party"];
 
         let trace1 = {
           x: classes,
           y: counts,
+          text: counts.map(String),
+          textposition: 'auto',
+            hoverinfo: 'none',
+            hovertemplate: ["Class A is a direct sighting<extra></extra>", "Class B is when noises or events are seen<extra></extra>","Class C is a report from a third party<extra></extra>"],
+          marker:{
+            color: ["#53C115", "#0422D3","#992301"]
+          },
           type: "bar"
         }
       
@@ -33,7 +41,37 @@ function classBarChart(BFData) {
       
         // Pass metric to chart title
         let layout = {
-          title: `Bigfoot Incidents by Class`
+          title: `Bigfoot Incidents by Class`,
+          xaxis: {tickfont: {
+
+            size: 14,
+      
+            color: 'rgb(107, 107, 107)'
+      
+          }},
+          yaxis: {
+
+            title: 'Number of Incidents',
+        
+            titlefont: {
+        
+              size: 16,
+        
+              color: 'rgb(107, 107, 107)'
+        
+            },
+        
+            tickfont: {
+        
+              size: 14,
+        
+              color: 'rgb(107, 107, 107)'
+        
+            }
+        
+          },
+          plot_bgcolor:"#faebd7",
+          paper_bgcolor:"#faebd7"
         };
       
         Plotly.newPlot("plot", data, layout);
@@ -110,25 +148,28 @@ function classBarChart(BFData) {
           
           
           var data = [trace1];
-          
-          
-          Plotly.newPlot('lineplot', data);
+          let layout = {
+            title: `Bigfoot Incidents by Decade`,
+            xaxis: {
+                title: 'Decade',
+                
         
-    }
+            },
+            yaxis: {
+  
+              title: 'Number of Incidents',
+          
+          
+            },
+            plot_bgcolor:"#faebd7",
+          paper_bgcolor:"#faebd7"
+          };
+          
+          Plotly.newPlot('lineplot', data, layout);
+        
+    };
             
-        // var BFData = JSON.parse(BFData)
-        // let year = [];
-        // for (var i = 0; i < BFData.length; i++ ){
-        //     year.push(BFData[i].data.Year);
-        // }
-        // var setYears= new Set(year);
-        // var yearArr = Array.from(setYears).sort();
-        // yearArr.shift()
-        // // setYears.sort(function compareFunction(firstNum, secondNum){
-        // //     return firstNum - secondNum
-        // // })
-        // console.log(yearArr);
-    
+      
       
 
     
