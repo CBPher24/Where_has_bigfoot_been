@@ -31,6 +31,13 @@
 
 <body>
 
+  <div class="jumbotron">
+    <div class="container-fluid">
+      <h1 class="display-4" style="color: #eeeee4; font-family: Copperplate, Papyrus, fantasy;">Welcome to Bigfoot Country</h1>
+      <p class="lead"><h5 style="color: #eeeee4; font-family: Copperplate, Papyrus, fantasy;">"Leave nothing but footprints..." ~Wild Journals</h5></p>
+    </div>
+  </div>
+
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <!-- <ol class="carousel-indicators">
       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -39,13 +46,17 @@
     </ol> -->
     <div class="carousel-inner">
       {% for pic in bfimgs%}
-      <div class="carousel-item active">
-        <img src="{{pic.data.photo  | safe}}" class="d-block w-100">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Supernatural Sasquatch Revelations</h5>
-          <p>{{pic.data.blurb  | safe}}</p>
-        </div>
-      </div>
+        {% if pic.index == "0" %}
+        <div class="carousel-item active">
+        {% else %}
+        <div class="carousel-item">
+        {% endif %}
+          <img src="{{pic.data.photo  | safe}}" class="d-block w-100">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Supernatural Sasquatch Revelations</h5>
+            <p>{{pic.data.blurb  | safe}}</p>
+          </div>
+        </div>        
       {% endfor %}
       <!-- <div class="carousel-item">
         <img src="..." class="d-block w-100" alt="...">
@@ -70,13 +81,6 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </button>
-  </div>
-
-  <div class="jumbotron">
-    <div class="container-fluid">
-      <h1 class="display-4" style="color: #eeeee4; font-family: Copperplate, Papyrus, fantasy;">Welcome to Bigfoot Country</h1>
-      <p class="lead"><h5 style="color: #eeeee4; font-family: Copperplate, Papyrus, fantasy;">"Leave nothing but footprints..." ~Wild Journals</h5></p>
-    </div>
   </div>
 
   <div class="main" id ="map-container">
@@ -119,7 +123,7 @@
     <!-- <script type="text/javascript" src="static/js/plots.js"></script>
     <script type="text/javascript">classBarChart({{plotdata|tojson}})</script> -->
 
-
+<!--
     <div class="carousel">
       <button class = "carousel_button--left">
         <img src="../Pics/f080b8582a98c35d31dde313fc7d42ed--vinyl-decals-vinyls.jpg" alt="">
@@ -128,7 +132,7 @@
         <ul class="carousel_track">
           {% for pic in bfimgs%}
           <li class="slides">
-            <!-- <img src="../Pics/bigfoot-main.webp" alt="Testing"> -->
+            <img src="../Pics/bigfoot-main.webp" alt="Testing">
             <img class= "car_img" src="{{pic.data.photo  | safe}}" alt="">
             <div class="mid_hover">
               <div class="hover_text">{{pic.data.blurb  | safe}}</div>
@@ -142,7 +146,7 @@
       </button>
     </div>
   </body>
-
+-->
  
   <!-- JS -->
   <script type="text/javascript" src = "static/js/logic.js"></script>
