@@ -27,7 +27,6 @@ function classBarChart(BFData) {
         let trace1 = {
           x: classes,
           y: counts,
-<<<<<<< HEAD
           text: counts.map(String),
           textposition: 'auto',
             hoverinfo: 'none',
@@ -36,13 +35,6 @@ function classBarChart(BFData) {
             color: ["#53C115", "#0422D3","#992301"]
           },
           type: "bar"
-=======
-          marker:{
-            color: ['rgb(9, 224, 34, 0.5)', 'rgb(15, 39, 219, 0.5)', 'rgb(255, 0, 0, 0.8)']
-          },
-          type: "bar",
-          
->>>>>>> 9bcffe3024b42800351bb0fe43709cb8093967ee
         }
       
         let data = [trace1]
