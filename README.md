@@ -57,11 +57,26 @@ Combination of Webscraping and Leaflet
 
 
 
-### Landing page with distribution of bigfoot sightings by location, year and by class, and the 10 most convincing bigfoot sightings.
+### Landing page with distribution of bigfoot sightings by location
+
+![Web capture_13-7-2022_112113_127 0 0 1](https://user-images.githubusercontent.com/100891182/179088782-405773bc-ecbe-4e30-aca3-84f573618e05.jpeg)
 
 
-![Web capture_13-7-2022_16417_127 0 0 11](https://user-images.githubusercontent.com/100891182/178838028-52a65b95-7580-4154-8c0c-f77856fa9fde.jpeg)
+### Landing page with distribution of bigfoot sightings by class
 
+![newplot (7)](https://user-images.githubusercontent.com/100891182/179089087-7fb23b76-dd48-469a-b72d-8baf4168b1a5.png)
+
+
+
+### Landing page with distribution of bigfoot sightings by decade
+
+![newplot (8)](https://user-images.githubusercontent.com/100891182/179089012-27e2a083-2a96-499d-9e37-8d5106140fb3.png)
+
+
+
+### Full website
+
+![Web capture_14-7-2022_162840_127 0 0 1](https://user-images.githubusercontent.com/100891182/179089407-d797afd0-ff1f-474a-9226-ea56efd4ce48.jpeg)
 
 
 
