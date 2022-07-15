@@ -178,16 +178,45 @@ sect[lst] = sect[lst].astype('str')
 ```
 Run one cell before last line 
 
-<strong>4. Using VS Code to run Flask, HTML/CSS and Javascript</strong>
-- Open VS Code and start a new file called `app.py` This will run Python code to integrate all of your working files together and display them on a webpage. 
+<strong>4. Use VS Code to run Flask, HTML/CSS and Javascript</strong>
+- Open VS Code and create a new folder called templates (it is crucial you name this folder templates so render_template will recognize it)
+    - Inside 'templates' create your `index.html`
+- Next create a folder called static where you will have two subfolders, name one `css` where you will create and store your `style.css` file and name the other `js` where you will create and store all of your javascript files.
+- Lastly inside VS Code start a new file called `app.py` This will run Python code to integrate all of your working files together and display them on a webpage. 
+```
+from flask import Flask, render_template, redirect
+from flask_pymongo import PyMongo
+import bson.json_util as json_util
 
-The project runs using a Python "Flask" App, including JavaScript, HTML, and CSS
+app = Flask(__name__)
 
-Combination of Webscraping, Leaflet, and Plotly
+mongo = PyMongo(app, uri="mongodb://localhost:27017/Project_3")
+
+@app.route("/")
+def home():
+    data = {}
+    bfoot = mongo.db.Bigfoot.find()
+    bimgs = mongo.db.images.find()
+    data=list(bfoot)
+    data = json_util.dumps(data)
+
+
+    return render_template("index.html", bfoot_data=data, plotdata= data, bfimgs = bimgs)
+    
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+Import the necessary dependencies including: Flask, render_template, redirect, Pymongo, and also bson.json_util
+Connect to MongoDB and your database.
+Create a route that reads from the database and connects and incorporates it into your `index.html` which will open and display your dashboard.
+
+
 
 ## FINAL FINDINGS:
 
-### Distribution of bigfoot sightings by location in Streen basemap
+### Distribution of bigfoot sightings by location in Streetview basemap
 
 
 ![Web capture_13-7-2022_112113_127 0 0 1](https://user-images.githubusercontent.com/100891182/178819870-473ca991-9439-4965-91f2-c55b38e468de.jpeg)
@@ -205,7 +234,7 @@ Combination of Webscraping, Leaflet, and Plotly
 
 
 
-### Popup with detail of sighting
+### Popup with details of sighting
 
 ![Web capture_14-7-2022_163455_127 0 0 1](https://user-images.githubusercontent.com/100891182/179090220-90023533-1429-4fb7-9344-b6176ae068de.jpeg)
 
@@ -226,9 +255,13 @@ Combination of Webscraping, Leaflet, and Plotly
 
 ![Web capture_14-7-2022_162840_127 0 0 1](https://user-images.githubusercontent.com/100891182/179089407-d797afd0-ff1f-474a-9226-ea56efd4ce48.jpeg)
 
+<br>
 
-
-## PRESENTATION LINK:
+## Contributors:
+Daniel Davies
+</br>Khanh Le
+</br>Christopher Partee
+</br>Stefanie Gagnon
 
 
 
