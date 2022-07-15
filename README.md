@@ -4,9 +4,6 @@
 ![header](https://user-images.githubusercontent.com/100891182/178513371-40a9fd95-5391-4c85-bbf5-f96d82459c41.jpg)
 
 
-TEAM MEMBERS: Dan Davies, Stefanie Gagnon, Chris Partee, Khanh Le
-
-
 ## WHERE HAS BIGFOOT BEEN?
 
 ## BACKGROUND
@@ -212,7 +209,9 @@ Import the necessary dependencies including: Flask, render_template, redirect, P
 Connect to MongoDB and your database.
 Create a route that reads from the database and connects and incorporates it into your `index.html` which will open and display your dashboard.
 
-
+- When creating `.js` files for javascript, you will need a `config.js` to hold your API key for accessing Leaflet, a `logic.js` page for your javascript code to create maps using Leaflet and a `plots.js` page for your Plot.ly charts and graphs.
+- You can create separate pages for any additional javascript or javascript libraries used (we have `L.colorIcon.js` as an additional library plugin used on our Leaflet map)
+- When designing the look of your webpage dashboard add the appropriate Bootstrap scripts (in the `<head>` tag and before the closing `</body>` tag) We use Bootstrap version 4.6 in our `index.html` 
 
 ## FINAL FINDINGS:
 
@@ -258,20 +257,42 @@ Create a route that reads from the database and connects and incorporates it int
 <br>
 
 ## Contributors:
-Daniel Davies
-</br>Khanh Le
-</br>Christopher Partee
-</br>Stefanie Gagnon
+### - <i><u>Daniel Davies</u></i> - Jupyter Notebook, data cleanup/manipulation, Javascript, Leaflet, Plot.ly, Python Flask, styling, presentation
 
+### - <i><u>Khanh Le</u></i> - Javascript, Leaflet, README, presentation creation
 
+### - <i><u>Christopher Partee</u></i> - Gather data and resources, Jupyter Notebook, webscraping, HTML, Bootstrap 
+
+### - <i><u>Stefanie Gagnon</u></i> - HTML, CSS, Bootstrap, styling, README additions/detailing/refining, data resources, presentation notes </i>
+
+<br>
 
 ## REFEERENCES:
+
+Data:
 
 https://data.world/timothyrenner/bfro-sightings-data/workspace/project-summary?agentid=timothyrenner&datasetid=bfro-sightings-data
 
 http://bfro.net/REF/aboutbfr.asp
 
+Coding:
+
+https://leafletjs.com/
+
+https://github.com/shevekk/Leaflet.ColorIcon
+
+https://getbootstrap.com/docs/4.6/getting-started/introduction/
+
+https://retentionscience.zendesk.com/hc/en-us/articles/115003025814-How-To-Build-HTML-for-Conditional-Statements
+
+Images:
+
 https://cdn.pixabay.com/photo/2022/01/14/04/02/bigfoot-6936421__340.png
+
+https://stock.adobe.com/search/free?k=forest&search_type=usertyped&asset_id=332548527&content_id=332548527
+
+Content/other:
+https://books.google.com/books/about/Leave_Nothing_But_Footprints_Take_Nothin.html?id=lcOoxgEACAAJ
 
 
 
