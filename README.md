@@ -257,13 +257,13 @@ Create a route that reads from the database and connects and incorporates it int
 <br>
 
 ## Contributors:
-### - <i><u>Daniel Davies</u></i> - Jupyter Notebook, data cleanup/manipulation, Javascript, Leaflet, Plot.ly, Python Flask, styling, presentation
+ - <i><u>Daniel Davies</u></i> - Jupyter Notebook, data cleanup/manipulation, Javascript, Leaflet, Plot.ly, Python Flask, styling, presentation
 
-### - <i><u>Khanh Le</u></i> - Javascript, Leaflet, README, presentation creation
+ - <i><u>Khanh Le</u></i> - Javascript, Leaflet, README, presentation creation
 
-### - <i><u>Christopher Partee</u></i> - Gather data and resources, Jupyter Notebook, webscraping, HTML, Bootstrap 
+ - <i><u>Christopher Partee</u></i> - Gather data and resources, Jupyter Notebook, webscraping, HTML, Bootstrap 
 
-### - <i><u>Stefanie Gagnon</u></i> - HTML, CSS, Bootstrap, styling, README additions/detailing/refining, data resources, presentation notes </i>
+ - <i><u>Stefanie Gagnon</u></i> - HTML, CSS, Bootstrap, styling, README additions/detailing/refining, data resources, presentation notes </i>
 
 <br>
 
