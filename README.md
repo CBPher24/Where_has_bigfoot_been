@@ -30,13 +30,37 @@ This project will create an application that shows various visualizations and st
 
 ## METHODS FOR ANALYSIS:
 
+You will need:
+- web browser (Chrome or Firefox recommended)
+- Jupyter Notebook
+    - pandas
+    - numpy 
+    - pymongo
 
-1. Utilized the datasets found in BFRO, DataWorld.
+    - os
+    - requests
+    - Splinter
+    - webdriver_manager
+    - Beautiful Soup
+- MongoDB
+
+- VS Code 
+
+- Flask
+    - Python
+    - HTML/CSS
+        - Bootstrap
+    - Javascript
+        - Leaflet
+        - Plotly
+
+
+<strong>1. Utilize the datasets found in BFRO, DataWorld.</strong>
 - Open the Data folder in this repository and use the Bigfooot_Locations.csv file directly or
 - you can download your file <a href="https://hub.arcgis.com/datasets/TrainingServices::-bigfoot-sightings/explore?location=36.682290%2C-103.774481%2C4.00">here</a>. Click the cloud download button on the left side of the map <img src="https://cdn-icons-png.flaticon.com/512/109/109600.png" style="height:20px; width:20px"> and choose to download the GeoJSON file.
 
-2. Powered by a dataset with over 3,500 records, using a Mongo Database.
-- Open the Bigfoot_Locations CSV file in Jupyter Notebook.
+<strong>2. Powered by a dataset with over 3,500 records, using a Mongo Database.</strong>
+- Open the Bigfoot_Locations CSV file in Jupyter Notebook. (Refer to our Data_Jupyter.ipynb inside the Coding folder)
 - Load in the proper dependencies including:
 ```
 import pandas as pd
@@ -45,6 +69,7 @@ import pymongo as db
 from pymongo import MongoClient
 client = MongoClient()
 ```
+note: Open MongoDB before running .ipynb code
 - Create a connection to MongoDB and name your database that you will load your data into (Where we have Project_3), then read in the CSV file
 ```
 db=client.Project_3
@@ -73,6 +98,88 @@ for x in range(len(bf_df)):
         result=results.to_dict()
         db.Bigfoot.insert_one({"index":index,"data":result})
 ```
+- note: see the Data_Jupyter_vWindows11.ipynb if you are on Windows 11, you will need to run an extra snippet of code for your system to recognize the data in the correct format to load into MongoDB
+```
+lst = list(bf_df)
+bf_df[lst] = bf_df[lst].astype('str')
+```
+<strong>3. Webscrape and add the scraped collection to the database.</strong>
+- Open a new Jupyter Notebook file to use for webscraping. (Refer to our Scraping.ipynb)
+- Import necessary dependencies to webscrape and execute path to browser:
+```
+import os
+import requests
+import pandas as pd
+from splinter import Browser
+from bs4 import BeautifulSoup
+from webdriver_manager.chrome import ChromeDriverManager
+import pymongo as db
+from pymongo import MongoClient
+
+executable_path = {'executable_path': ChromeDriverManager().install()}
+browser = Browser('chrome', **executable_path, headless=True)
+```
+- Save this URL: "https://www.outsideonline.com/gallery/10-most-convincing-bigfoot-sightings/"
+into a variable
+- Proceed the scraping process. Add the page source to the variable `content`, load the contents of the page, its source, into BeautifulSoup.
+```
+browser.visit(bf_url)
+
+content = browser.html
+
+soup = BeautifulSoup(content,features="lxml")
+```
+
+- Pull the sections and images from the page using a 'for' loop like below:
+```
+sections = []
+for element in soup.findAll(attrs = {'class': 'c-content-single-gallery__gallery-image u-spacing'}):
+    images = {}
+    img_sect = element.find(attrs={'class':'o-image lazy'})
+     # print(img_sect)
+    img_dtl = img_sect["alt"]
+     # print(img_dtl)
+    img_src = img_sect["data-src"]
+     # print(img_src)
+    
+    images["blurb"] = img_dtl
+    images["photo"] = img_src
+
+    sections.append(images)
+```
+- Connect to MongoDB using MongoClient exactly like in step 2. 
+```
+client = MongoClient()
+db=client.Project_3 
+db.images.drop()
+```
+The new collection is called images. The last line will drop the collection if it already exists in the database to avoid duplications.
+
+- Save the new data into a dataframe
+```
+sect = pd.DataFrame(sections)
+sect["index"] = sect.index
+sect
+```
+
+- Add the new collection to the existing database
+```
+for x in range(len(sect)):
+        results=sect.iloc[x,:]
+        index=results["index"].astype('str')
+        result=results.to_dict()
+        db.images.insert_one({"index":index,"data":result})
+```
+The dictionary to refer to inside this collection is saved under 'data'
+- note, if using Windows 11, refer to our Scraping_vWindows11.ipynb for the extra snippet of code to run for this OS
+```
+lst = list(sect)
+sect[lst] = sect[lst].astype('str')
+```
+Run one cell before last line 
+
+<strong>4. Using VS Code to run Flask, HTML/CSS and Javascript</strong>
+- Open VS Code and start a new file called `app.py` This will run Python code to integrate all of your working files together and display them on a webpage. 
 
 The project runs using a Python "Flask" App, including JavaScript, HTML, and CSS
 
