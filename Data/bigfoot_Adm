@@ -1,9 +1,0 @@
- -- CREATE TABLE bigfoot1 (
--- 		state VARCHAR(255),
--- 		season VARCHAR (255),
--- 		latitude point not null,
--- 		longitude point not null,
--- 		date timestamp with time zone NOT NULL DEFAULT CURRENT_TIMESTAMP, 
--- 		number INT,  
--- 		classification VARCHAR(255)
--- );
