@@ -258,7 +258,7 @@ Create a route that reads from the database and connects and incorporates it int
 ## Future Considerations:
 With more time, more exploration can always be done on a dataset!
 
-There has been a significant amount of suggested evidence that Bigfoot sightings are more likely to occur in regions where rainfall is higher. It would notable to pull data from an Open Weather Map API and compare and contrast points of highest rainfall with recorded Bigfoot sightings. We could also see how many Bigfoot sightings drier regions have in comparison to regions with high rainfall.
+There has been a significant amount of suggested evidence that Bigfoot sightings are more likely to occur in regions where rainfall is higher. It would be notable to pull data from an Open Weather Map API and compare and contrast points of highest rainfall with recorded Bigfoot sightings. We could also see how many Bigfoot sightings drier regions have in comparison to regions with high rainfall.
 
 The next point of interest includes shopping outlets, convenience, and liquor stores. Using an API like Google Places, pull latitude and longitude coordinates of these types of places, and overlay them onto the map of Bigfoot sightings. From here we'll be able to see where Bigfoot is shopping for all of his modern day Bigfoot needs and which 7-11 he might be purchasing his adult beverages of choice from!
 
@@ -268,11 +268,11 @@ Lastly, diving deeper into Javascript to place how many Bigfoot sightings there 
 <br>
 
 ## Contributors:
- - <i><u>Daniel Davies</u></i> - Jupyter Notebook, data cleanup/manipulation, Javascript, Leaflet, Plotly, Python Flask, styling, presentation editing
+ - <i><u>Daniel Davies</u></i> - Jupyter Notebook, ETL, data cleanup/manipulation, Javascript, Leaflet, Plotly, Python Flask, styling, presentation editing
 
- - <i><u>Khanh Le</u></i> - Javascript, Leaflet, initial README.md structure and edits, powerpoint, presentation initialization/creation
+ - <i><u>Khanh Le</u></i> - ETL, Javascript, Leaflet, initial README.md structure and edits, powerpoint, presentation initialization/creation
 
- - <i><u>Christopher Partee</u></i> - Gather data and resources, Jupyter Notebook, webscraping, Flask, HTML, Bootstrap, presentation editing 
+ - <i><u>Christopher Partee</u></i> - Gather data and resources, ETL,  Jupyter Notebook, webscraping, Flask, HTML, Bootstrap, presentation editing 
 
  - <i><u>Stefanie Gagnon</u></i> - HTML, CSS, Bootstrap, Plotly, styling, README additions/detailing/refining, data resources, presentation organization </i>
 
