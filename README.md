@@ -1,7 +1,7 @@
 
 # PROJECT 3: WHERE HAS BIGFOOT BEEN?
 
-![header](https://user-images.githubusercontent.com/100891182/178513371-40a9fd95-5391-4c85-bbf5-f96d82459c41.jpg)
+![header](https://www.outsideonline.com/wp-content/uploads/2016/07/08/bigfoot-roger-patterson-1_h.jpg?width=1200&enable=upscale)
 
 
 ## WHERE HAS BIGFOOT BEEN?
@@ -15,6 +15,8 @@ According to Bigfoot Field Researcher Organization (BFRO), there have been over 
 BFRO has collected and set a dataset about bigfoot sightings throughout North America. 
 
 This project will create an application that shows various visualizations and statistics about sasquatch sightings.
+
+![](https://www.outsideonline.com/wp-content/uploads/2016/07/08/bigfoot-ap-7.jpg?width=1200&enable=upscale)
 
 ## QUESTIONS FOR ANALYSIS:
 
@@ -248,24 +250,34 @@ Create a route that reads from the database and connects and incorporates it int
 
 ![newplot (8)](https://user-images.githubusercontent.com/100891182/179089012-27e2a083-2a96-499d-9e37-8d5106140fb3.png)
 
-
-
-### Full website
+## Full website
 
 ![Web capture_14-7-2022_162840_127 0 0 1](https://user-images.githubusercontent.com/100891182/179089407-d797afd0-ff1f-474a-9226-ea56efd4ce48.jpeg)
 
 <br>
 
-## Contributors:
- - <i><u>Daniel Davies</u></i> - Jupyter Notebook, data cleanup/manipulation, Javascript, Leaflet, Plot.ly, Python Flask, styling, presentation
+## Future Considerations:
+With more time, more exploration can always be done on a dataset!
 
- - <i><u>Khanh Le</u></i> - Javascript, Leaflet, README, presentation creation
+There has been a significant amount of suggested evidence that Bigfoot sightings are more likely to occur in regions where rainfall is higher. It would notable to pull data from an Open Weather Map API and compare and contrast points of highest rainfall with recorded Bigfoot sightings. We could also see how many Bigfoot sightings drier regions have in comparison to regions with high rainfall.
 
- - <i><u>Christopher Partee</u></i> - Gather data and resources, Jupyter Notebook, webscraping, HTML, Bootstrap 
+The next point of interest includes shopping outlets, convenience, and liquor stores. Using an API like Google Places, pull latitude and longitude coordinates of these types of places, and overlay them onto the map of Bigfoot sightings. From here we'll be able to see where Bigfoot is shopping for all of his modern day Bigfoot needs and which 7-11 he might be purchasing his adult beverages of choice from!
 
- - <i><u>Stefanie Gagnon</u></i> - HTML, CSS, Bootstrap, styling, README additions/detailing/refining, data resources, presentation notes </i>
+Lastly, diving deeper into Javascript to place how many Bigfoot sightings there are per state. Also, sorting the data further by state and using a plug-in from Leaflet, called Storymap, to visually follow Bigfoot sightings through time and see each point of sighting in a state chronologically.
+
 
 <br>
+
+## Contributors:
+ - <i><u>Daniel Davies</u></i> - Jupyter Notebook, data cleanup/manipulation, Javascript, Leaflet, Plot.ly, Python Flask, styling, presentation editing
+
+ - <i><u>Khanh Le</u></i> - Javascript, Leaflet, initial README.md structure and edits, powerpoint, presentation initialization/creation
+
+ - <i><u>Christopher Partee</u></i> - Gather data and resources, Jupyter Notebook, webscraping, Flask, HTML, Bootstrap, presentation editing 
+
+ - <i><u>Stefanie Gagnon</u></i> - HTML, CSS, Bootstrap, Plot.ly, styling, README additions/detailing/refining, data resources, presentation organization </i>
+
+![](https://www.outsideonline.com/wp-content/uploads/2016/07/08/bigfoot-josh-highcliff-9.jpg?width=1200&enable=upscale)
 
 ## REFEERENCES:
 
@@ -285,15 +297,16 @@ https://getbootstrap.com/docs/4.6/getting-started/introduction/
 
 https://retentionscience.zendesk.com/hc/en-us/articles/115003025814-How-To-Build-HTML-for-Conditional-Statements
 
-Images:
+Webscraping & Images:
+
+https://www.outsideonline.com/gallery/10-most-convincing-bigfoot-sightings/
+
+https://cdn.pixabay.com/
 
 https://cdn.pixabay.com/photo/2022/01/14/04/02/bigfoot-6936421__340.png
 
 https://stock.adobe.com/search/free?k=forest&search_type=usertyped&asset_id=332548527&content_id=332548527
 
 Content/other:
+
 https://books.google.com/books/about/Leave_Nothing_But_Footprints_Take_Nothin.html?id=lcOoxgEACAAJ
-
-
-
-
