@@ -211,7 +211,7 @@ Import the necessary dependencies including: Flask, render_template, redirect, P
 Connect to MongoDB and your database.
 Create a route that reads from the database and connects and incorporates it into your `index.html` which will open and display your dashboard.
 
-- When creating `.js` files for javascript, you will need a `config.js` to hold your API key for accessing Leaflet, a `logic.js` page for your javascript code to create maps using Leaflet and a `plots.js` page for your Plot.ly charts and graphs.
+- When creating `.js` files for javascript, you will need a `config.js` to hold your API key for accessing Leaflet, a `logic.js` page for your javascript code to create maps using Leaflet and a `plots.js` page for your Plotly charts and graphs.
 - You can create separate pages for any additional javascript or javascript libraries used (we have `L.colorIcon.js` as an additional library plugin used on our Leaflet map)
 - When designing the look of your webpage dashboard add the appropriate Bootstrap scripts (in the `<head>` tag and before the closing `</body>` tag) We use Bootstrap version 4.6 in our `index.html` 
 
@@ -245,7 +245,6 @@ Create a route that reads from the database and connects and incorporates it int
 ![newplot (7)](https://user-images.githubusercontent.com/100891182/179089087-7fb23b76-dd48-469a-b72d-8baf4168b1a5.png)
 
 
-
 ### Landing page with distribution of bigfoot sightings by decade
 
 ![newplot (8)](https://user-images.githubusercontent.com/100891182/179089012-27e2a083-2a96-499d-9e37-8d5106140fb3.png)
@@ -269,13 +268,13 @@ Lastly, diving deeper into Javascript to place how many Bigfoot sightings there 
 <br>
 
 ## Contributors:
- - <i><u>Daniel Davies</u></i> - Jupyter Notebook, data cleanup/manipulation, Javascript, Leaflet, Plot.ly, Python Flask, styling, presentation editing
+ - <i><u>Daniel Davies</u></i> - Jupyter Notebook, data cleanup/manipulation, Javascript, Leaflet, Plotly, Python Flask, styling, presentation editing
 
  - <i><u>Khanh Le</u></i> - Javascript, Leaflet, initial README.md structure and edits, powerpoint, presentation initialization/creation
 
  - <i><u>Christopher Partee</u></i> - Gather data and resources, Jupyter Notebook, webscraping, Flask, HTML, Bootstrap, presentation editing 
 
- - <i><u>Stefanie Gagnon</u></i> - HTML, CSS, Bootstrap, Plot.ly, styling, README additions/detailing/refining, data resources, presentation organization </i>
+ - <i><u>Stefanie Gagnon</u></i> - HTML, CSS, Bootstrap, Plotly, styling, README additions/detailing/refining, data resources, presentation organization </i>
 
 ![](https://www.outsideonline.com/wp-content/uploads/2016/07/08/bigfoot-josh-highcliff-9.jpg?width=1200&enable=upscale)
 
